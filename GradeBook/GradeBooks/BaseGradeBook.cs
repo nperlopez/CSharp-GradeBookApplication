@@ -130,7 +130,7 @@ namespace GradeBook.GradeBooks
                     break;
             }
 
-            if ((studentType == StudentType.Honors || studentType == StudentType.DualEnrolled) && isWeighted && letterGrade == 'F')
+            if ((studentType == StudentType.Honors || studentType == StudentType.DualEnrolled) && isWeighted && letterGrade != 'F')
             {
                 result += 1;
             }
